@@ -5,7 +5,7 @@ import PhotoCard from "./components/Nasa";
 
 function App(props) {
   const[data, setData] = useState({});
-  const[date, setDate] = useState(10);
+  const[date, setDate] = useState(1);
   const changeDate = () =>{
     setDate(date+1)
   }
@@ -17,7 +17,7 @@ function App(props) {
       setData(res.data);
             
         });
-    },[setDate]);
+    },[date]);
       
    
   return (
@@ -26,7 +26,7 @@ function App(props) {
       <h1>
       Tim's Nasa Picture Page
       </h1>
-     
+      
     </div>
     <div className="App">
        <button onClick={changeDate}>Change Picture</button>

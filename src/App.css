@@ -50,4 +50,11 @@ p{
     transform: rotate(360deg);
   }
 }
-
+button{
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
