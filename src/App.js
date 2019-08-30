@@ -1,14 +1,21 @@
 import React from "react";
 import "./App.css";
+ // to run axios, must do rpm add axios
+import GetPicture from "./components/Axios"
 
-function App() {
+function App(props) {
+ 
+   
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
+    <>
+    
+    {/* <div className="App"> */}
+   
+      {/* <PhotoCard /> this renders the photocard */}
+      <GetPicture/>
+      {/* <PhotoCard/> */}
+      {/* </div>  */}
+    </>
   );
 }
 
